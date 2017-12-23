@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="http://leaftaps.com/opentaps"></parameter>
+<parameter name="uName" value="DemoSalesManager"></parameter>
+<parameter name="pwd" value="crmsfa"></parameter>
+  <test name="HomeWork">
+  <groups>
+  <run>
+  <include name="common"></include>
+  <include name="smoke"></include>
+  <include name="sanity"></include>  
+<!--   <exclude name="sanity"></exclude> -->
+  </run>
+  </groups>
+    <classes>
+    <class name="week4_homework.CreateLead_1"/>
+    <class name="week4_homework.EditLead_1"/>
+      <class name="week4_homework.Delete_Lead_1"/>
+      <class name="week4_homework.DuplicateLead_1"/>
+      <class name="week4_homework.MeargeLead_1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

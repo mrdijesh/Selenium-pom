@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="http://leaftaps.com/opentaps"></parameter>
+<parameter name="uName" value="DemoSalesManager"></parameter>
+<parameter name="pwd" value="crmsfa"></parameter>
+  <test name="Test">
+  <groups>
+  <run>
+  <include name="common"></include>
+  <include name="Regression"></include>
+  <exclude name="S.*"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="week4_day2.Delete_Lead_1"/>
+      <class name="week4_day2.DuplicateLead_1"/>
+      <class name="week4_day2.EditLead_1"/>
+      <class name="week4_day2.MeargeLead_1"/>
+      <class name="week4_day2.CreateLead_1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

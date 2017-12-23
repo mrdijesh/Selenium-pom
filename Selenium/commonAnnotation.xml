@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="basicAnnotation">
+<test name="basicAnnotation">
+<classes>
+<class name="testng_concepts.CommonUsedAnnotation"></class>
+</classes>
+</test>
+
+<test name="groupTest">
+<groups>
+<run>
+<include name="sanity"></include>
+</run>
+</groups>
+<classes>
+<class name="testng_concepts.GroupTest"></class>
+</classes>
+</test>
+</suite>
